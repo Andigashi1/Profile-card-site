@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+
+    /* ---colors--- */
+
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    background: url(images/bg-pattern-top.svg) no-repeat top -30em left -14em,
+                url(images/bg-pattern-bottom.svg) no-repeat bottom -34em right -10em;
+    background-size: 60%;
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--desaturated-blue);
+}
+
+main {
+    position: relative;
+    min-width: 20em;
+    width: clamp(20em, 25vw, 24em);
+    min-height: 24em;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.backgroundimg {
+    background-image: url(images/bg-pattern-card.svg);
+    background-position: center;
+    min-height: 9.5em;
+    border-radius: 10px 10px 0 0;
+}
+
+.profilepic {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 24%;
+    border-radius: 50%;
+    border: .3em solid white;
+}
+
+.personalinfo {
+    text-align: center;
+    margin-top: 3.8em;
+    padding: 1em 0 2em;
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+.personalinfo > h1 {
+    font-size: 1.175rem;
+    margin-bottom: .3em;
+}
+
+.personalinfo h1 span {
+    font-weight: 200;
+}
+
+.followers {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em 1em;
+}
+
+.followers h1 {
+    font-size: 1.2rem;
+}
+
+.followers  p {
+    margin-top: .2em;
+    font-size: .85rem;
+}
+
+@media screen and (max-width:80em){
+    body {
+        background-size: 70%;
+        background-position: top -25em left -15em,
+                             bottom -30em right -15em;
+    }
+}
+
+@media screen and (max-width:60em){
+    body {
+        background-position: top -20em  left -14em,
+                             bottom -22em right -10em;
+    }
+}
+
+@media screen and (max-width:40em){
+    body {
+        background-position: top -15em  left -15em,
+                             bottom -15em right -12em;
+        background-size: 100%;
+    }
+}

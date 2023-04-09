@@ -63,7 +63,7 @@ main {
     text-align: center;
     margin-top: 3.8em;
     padding: 1em 0 2em;
-    border-bottom: 1px solid var(--dark-gray);
+    border-bottom: 1px solid hsla(0, 0%, 70%, 0.563);
 }
 
 .personalinfo > h1 {
@@ -73,6 +73,10 @@ main {
 
 .personalinfo h1 span {
     font-weight: 200;
+}
+
+.personalinfo p {
+    color: var(--dark-gray);
 }
 
 .followers {
